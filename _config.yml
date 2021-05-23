@@ -1,0 +1,72 @@
+safe: true
+source: .
+destination: ./_site
+highlighter: rouge
+markdown: kramdown
+exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '.sass-cache']
+sass:
+  style: uncompressed
+
+# Load plugins
+gems: ['jekyll/scholar']
+
+url: https://anr-bmbf-pivot.github.io
+baseurl: /pivot.realmv6.org/
+
+deadlines:
+- name: Registration
+  date: January 17, 2020
+- name: Hackathon
+  date: February 17-19, 2020
+
+# Configuration for site
+title: PIVOT
+# short_title: Dagstuhl IoT Hackathon 2017
+description: Privacy-Integrated design and Validation in the constrained IoT
+author: PIVOT Project Team
+email:
+logo: images/logo-ecdf.jpg
+
+responsive_bp: 768
+
+permalink: /:page.html
+
+navbar_list:
+- name: Home
+  link: /
+- name: About PIVOT
+  link: /about
+- name: Publications
+  link: /publications
+#- name: Background
+  #link: background
+#- name: Agenda
+  #link: agenda
+- name: Project Partners
+  link: /partners
+
+# Configuration for asides.html
+asides:
+  github: false
+  links: false
+  partners: true
+  sponsors: true
+  # tweets: false
+
+
+scholar:
+   #style: assets/bibliography/ieee-with-url.csl
+   #style: ieee-with-url
+   #style: chicago-fullnote-bibliography
+   style: _bib/my-ieee.csl
+   source: ./_bib
+   bibliography: pivot.bib
+   #bibliography_template: "{{reference}}"
+   bibliography_template: "bibtemplate"
+   replace_strings: true
+
+   details_dir:    bib
+   details_layout: bibtex.html
+   details_link:   Details
+   bibtex_filters:
+     - latex

@@ -1,0 +1,137 @@
+@article{rsw-sypea-21,
+  author = {Michel Rottleuthner and Thomas C. Schmidt and Matthias W{\"a}hlisch},
+  title = {{Sense Your Power: The ECO Approach to Energy Awareness for IoT Devices}},
+  journal = {ACM Transactions on Embedded Computing Systems},
+  pages = {24:1--24:25},
+  volume = {20},
+  number = {3},
+  month = {March},
+  year = {2021},
+  publisher = {ACM},
+  abstract = {Energy constrained sensor nodes can adaptively optimize their energy consumption if a continuous measurement is provided. This is of particular importance in scenarios of high dynamics such as with energy harvesting. Still, self-measuring of power consumption at reasonable cost and complexity is unavailable as a generic system service. In this paper, we present ECO, a hardware-software co-design that adds autonomous energy management capabilities to a large class of low-end IoT devices. ECO consists of a highly portable hardware shield built from inexpensive commodity components, and software integrated into the RIOT operating system. RIOT supports more than 200 popular microcontrollers. Leveraging this flexibility, we assembled a variety of sensor nodes to evaluate key performance properties for different device classes. An overview and comparison with related work shows how ECO fills the gap of in situ power attribution transparently for consumers and how it improves over existing solutions. We also report about two different real-world field trials, which validate our solution for long-term production use.},
+  theme = {iot},
+  url = {https://doi.org/10.1145/3441643},
+  file = {http://ilab-pub.imp.fu-berlin.de/papers/rsw-sypea-21.pdf}
+}
+
+@inproceedings{kblsw-pschl-21,
+  author = {Peter Kietzmann and Lena Boeckmann and Leandro Lanzieri and Thomas C. Schmidt and Matthias W{\"a}hlisch},
+  title = {{A Performance Study of Crypto-Hardware in the Low-end IoT}},
+  booktitle = {Proc. of 18th International Conference on Embedded Wireless Systems and Networks (EWSN)},
+  year = {2021},
+  publisher = {ACM},
+  address = {New York},
+  abstract = {In this paper, we contribute a comprehensive resource
+  analysis for widely used crypto primitives across different off-the-shelf
+  IoT platforms, and quantify the performance impact of crypto hardware.
+  This work builds on the newly designed crypto subsystem of the IoT
+  operating system RIOT, which provides seamless crypto support across
+  software and hardware components.  Our evaluations show that (i)
+  hardware-based crypto outperforms software  by considerably over 100\,\%,
+  which is crucial for nodal lifetime. Despite, the memory consumption
+  typically increases moderately. (ii) Hardware diversity,  driver design,
+  and software implementations  heavily impact resource efficiency.
+  (iii)~External crypto-chips operate slowly on symmetric
+  crypto-operations, but provide secure write-only memory for private
+  credentials, which is unavailable on many platforms.},
+  theme = {nsec|iot},
+  file = {http://ilab-pub.imp.fu-berlin.de//papers/kblsw-pschl-21.pdf},
+  slides = {../slides/kblsw-pschl-21.pdf},
+  video = {https://youtu.be/Aqp-AassudM},
+  code = {https://github.com/inetrg/EWSN-2021},
+}
+
+@inproceedings{gasw-icoso-20,
+  author = {Cenk G{\"u}ndogan and Christian Ams{\"u}ss and Thomas C. Schmidt and Matthias W{\"a}hlisch},
+  title = {{IoT Content Object Security with OSCORE and NDN: A First Experimental Comparison}},
+  booktitle = {Proc. of 19th IFIP Networking Conference},
+  pages = {19--27},
+  publisher = {IEEE},
+  address = {Piscataway, NJ, USA},
+  year = {2020},
+  abstract = {The emerging Internet of Things (IoT) challenges the
+  end-to-end transport of the Internet by low power lossy links and
+  gateways that perform protocol translations. Protocols such as CoAP or
+  MQTT-SN are degraded by the overhead of DTLS sessions, which in common
+  deployment protect content transfer only up to the gateway. To preserve
+  content security end-to-end via gateways and proxies, the IETF recently
+  developed Object Security for Constrained RESTful Environments (OSCORE),
+  which extends CoAP with content object security features commonly known
+  from Information Centric Networks (ICN).  This paper presents a
+  comparative analysis of protocol stacks that protect request-response
+  transactions. We measure protocol performances of CoAP over DTLS, OSCORE,
+  and the information-centric Named Data Networking (NDN) protocol on a
+  large-scale IoT testbed in single- and multi-hop scenarios. Our findings
+  indicate that (a) OSCORE improves on CoAP over DTLS in error-prone
+  wireless regimes due to omitting the overhead of maintaining security
+  sessions at endpoints, and (b) NDN attains superior robustness and
+  reliability due to its intrinsic network caches and hop-wise
+  retransmissions.},
+  file = {http://ilab-pub.imp.fu-berlin.de/papers//papers/gasw-icoso-20.pdf},
+  awards = {Best Paper Award},
+  code = {https://github.com/inetrg/IFIP-Networking-2020},
+  video = {https://youtu.be/QfBzYZBF3Ek},
+  theme = {iot|icn|nsec},
+}
+
+
+@inproceedings{tssw-espai-20,
+  author = {Pouyan Fotouhi Tehrani and Jochen H. Schiller and Thomas C. Schmidt and Matthias W\"{a}hlisch},
+  title = {{On Economic, Societal, and Political Aspects in ICN}},
+  booktitle = {Proceedings of the 7th ACM Conference on Information-Centric Networking},
+  pages = {155--157},
+  year = {2020},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  abstract = {Information-centric networking (ICN), as an antithesis of host-centric networking, denotes a paradigm shift in communication networks. It introduces names to the network layer and favors de-localized content instead of addresses and hosts. ICN is an attempt to design a network tailored to demands of users who only care about data. The simplicity of this basic premise, however, turns out to be rather deceptive; a pitfall in waiting on the path of ICN to wide-scale deployment. Surely users care about data, but they also care about trust, accountability, private communication, and everything else that the current Internet provides beside mere content. This paper is a first attempt in pinpointing the missing non-technical aspects that are crucial to success of ICN as a viable replacement for the Internet.},
+  file = {http://ilab-pub.imp.fu-berlin.de/papers/tssw-espai-20.pdf},
+  video = {https://youtu.be/nUitAUfWVF4},
+  slides = {https://conferences.sigcomm.org/acm-icn/2020/assets/3-DP-3-Tehrani-Poster-1d32d058142db0e4d0235ec123719607bc4982e3cfcc420e09b5c7414f8b48a7.pdf},
+  theme = {iot|icn},
+}
+
+@inproceedings{gasw-triwt-20,
+  author = {Cenk G{\"u}ndogan and Christian Ams{\"u}ss and Thomas C. Schmidt and Matthias W{\"a}hlisch},
+  title = {{Toward a RESTful Information-Centric Web of Things: A Deeper Look at Data Orientation in CoAP}},
+  booktitle = {Proc. of 7th ACM Conference on Information-Centric Networking (ICN)},
+  publisher = {ACM},
+  address = {New York},
+  location = {Montreal, CA},
+  year = {2020},
+  month = {September},
+  pages = {77--88},
+  abstract = {The information-centric networking (ICN) paradigm offers replication of autonomously verifiable content throughout a network, in which content is  bound to names instead of hosts. This has proven beneficial in particular for the constrained IoT.
+ Several approaches, the most prominent of which being Named Data Networking, propose access to named content directly on the network layer. Independently, the IETF CoAP  protocol group started to develop mechanisms that support autonomous content processing and in-network storage.
+
+In this paper, we explore the emerging CoAP building blocks and how they can give rise to an information-centric network architecture for a new RESTful Web of Things. We discuss design options and measure characteristic performances of different network configurations, which deploy CoAP proxies and OSCORE content object security, and compare with NDN. Our findings indicate an almost continuous design space ranging from plain CoAP at the one end to NDN on the other. },
+  file = {http://ilab-pub.imp.fu-berlin.de/papers/gasw-triwt-20.pdf},
+  video = {https://youtu.be/S2x5UU4jVzA},
+  slides = {https://conferences.sigcomm.org/acm-icn/2020/assets/4-3-gundogan-3cff810c07ebd9e3fe4d2734cb9cdecf26f94d1f6db608e669eee8d44182f977.pdf},
+  theme = {iot|icn|nsec},
+}
+
+
+@inproceedings{lgsw-cdsfr-20,
+  author = {Martine S. Lenders and Cenk G{\"u}ndogan and Thomas C. Schmidt and Matthias W{\"a}hlisch},
+  title = {{Connecting the Dots: Selective Fragment Recovery in ICNLoWPAN}},
+  booktitle = {Proc. of 7th ACM Conference on Information-Centric Networking (ICN)},
+  publisher = {ACM},
+  address = {New York},
+  location = {Montreal, CA},
+  year = {2020},
+  month = {September},
+  pages = {70--76},
+  abstract = {In this paper, we analyze the benefits of integrating 6LoWPAN Selective Fragment Recovery (SFR) in ICNLoWPAN.
+  We present a solution that allows for immediate fragment forwarding---a key feature of SFR---in combination with ICN caching.
+  For this a \emph{Virtual Reassembling Endpoint} (VREP) is proposed which acts transparently as an SFR fragment forwarder while simultaneously collecting them.
+  Once a datagram is complete, it is exposed to the content cache, effectively making the VREP the new fragmenting endpoint.
+  Our proposal complies with current specs defined in the IETF/IRTF.
+  Furthermore, we offer considerations to combine the reverse path forwarding schemes of both SFR and ICNLoWPAN and assess drawbacks and benefits.
+  In preliminary experiments, we evaluate the network performance of combining ICNLoWPAN with SFR and~VREP.},
+  file = {http://ilab-pub.imp.fu-berlin.de//papers/lgsw-cdsfr-20.pdf},
+  video = {https://youtu.be/kUvN8Av6XyE},
+  slides = {https://conferences.sigcomm.org/acm-icn/2020/assets/4-2-Lenders-95914dded8a7bb44263954b97ca0852844e1545baeb945af72c3ca6576df2d5b.pdf},
+  theme = {iot|icn|manet},
+}
+
+
