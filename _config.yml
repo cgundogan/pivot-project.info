@@ -10,8 +10,8 @@ sass:
 # Load plugins
 gems: ['jekyll/scholar']
 
-url: https://anr-bmbf-pivot.github.io
-baseurl: /pivot.realmv6.org/
+url: http://pivot-project.info/
+baseurl: /
 
 deadlines:
 - name: Registration
