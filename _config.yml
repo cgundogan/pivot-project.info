@@ -11,7 +11,7 @@ sass:
 gems: ['jekyll/scholar']
 
 url: http://pivot-project.info/
-baseurl: /
+baseurl:
 
 deadlines:
 - name: Registration
