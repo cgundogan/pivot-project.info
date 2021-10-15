@@ -12,3 +12,78 @@
   theme = {iot|nsec},
 }
 
+@article{gasw-cosit-21,
+  author = {Cenk G{\"u}ndogan and Christian Ams{\"u}ss and Thomas C. Schmidt and Matthias W{\"a}hlisch},
+  title = {{Content Object Security in the Internet of Things: Challenges, Prospects, and Emerging Solutions}},
+  journal = {IEEE Transactions on Network and Service Management (TNSM)},
+  year = {2021},
+  volume = {},
+  number = {},
+  pages = {},
+  publisher = {IEEE},
+  address   = {Piscataway, NJ, USA},
+  abstract = {Content objects are confined data elements that carry meaningful information. Massive amounts of content objects are published and exchanged  every day on the Internet.  The emerging Internet of Things (IoT) augments the network edge with reading sensors  and controlling actuators that comprise machine-to-machine communication using small data objects. IoT content objects are often messages that fit into single IPv6 datagram. These IoT messages  frequently traverse protocol translators at gateways, which break end-to-end transport and security of Internet protocols.   To preserve content security from end to end via gateways and proxies, the IETF recently developed Object Security for Constrained RESTful Environments (OSCORE), which extends the Constrained Application Protocol (CoAP) with content object security features commonly known from Information Centric Networking (ICN).
+
+This paper revisits the current IoT protocol architectures and presents a comparative analysis of protocol stacks that protect request-response transactions. We discuss features and limitations of the different protocols and analyze emerging functional extensions.
+We measure the protocol performances of CoAP over Datagram Transport Layer Security (DTLS), OSCORE, and the information-centric Named Data Networking (NDN) protocol on a large-scale IoT testbed in single- and multi-hop scenarios.
+Our findings indicate that (a) OSCORE improves on CoAP over DTLS in error-prone wireless regimes due to omitting the  overhead of maintaining security sessions at endpoints,  (b) NDN attains superior robustness and reliability due to its intrinsic network caches and hop-wise retransmissions, and (c) OSCORE/CoAP offers room for improvement and optimization in multiple directions.},
+  url = {https://doi.org/10.1109/TNSM.2021.3099902},
+  theme     = {iot|icn|nsec},
+}
+
+@inproceedings{gasw-rfuii-21,
+  author = {Cenk G{\"u}ndogan and Christian Ams{\"u}ss and Thomas C. Schmidt and Matthias W{\"a}hlisch},
+  title = {{Reliable Firmware Updates for the Information-Centric Internet of Things}},
+  booktitle = {Proc. of 8th ACM Conference on Information-Centric Networking (ICN)},
+  publisher = {ACM},
+  address = {New York},
+  location = {Virtual},
+  year = {2021},
+  month = {September},
+  pages = {59--70},
+  abstract = {Security in the Internet of Things (IoT) requires ways to regularly update firmware  in the field. These demands ever increase with new, agile concepts such as security as code and should be considered a regular operation. Hosting massive firmware roll-outs present a crucial challenge for the constrained wireless environment.
+
+In this paper, we explore how information-centric networking can ease reliable firmware updates. We start from the recent standards developed by the IETF SUIT working group and contribute a system that allows for a timely discovery of new firmware versions by using cryptographically protected manifest files. Our design enables a cascading firmware roll-out from a gateway towards leaf nodes in a low-power multi-hop network. While a chunking mechanism prepares firmware images for typically low-sized maximum transmission units (MTUs), an early Denial-of-Service (DoS) detection prevents the distribution of tampered or malformed chunks. In experimental evaluations on a real-world IoT testbed, we demonstrate feasible strategies with adaptive bandwidth consumption and a high resilience to connectivity loss when replicating firmware images into the IoT edge.},
+  url  = {https://doi.org/10.1145/3460417.3482974},
+  theme     = {iot|icn},
+}
+
+@inproceedings{gasw-gcorm-21,
+  author    = {Cenk G{\"u}ndogan and Christian Ams{\"u}ss and Thomas C. Schmidt and Matthias W{\"a}hlisch},
+  title     = {{Group Communication with OSCORE: RESTful Multiparty Access to a Data-Centric Web of Things}},
+  booktitle = {Proc. of the 46th IEEE Conference on Local Computer Networks (LCN)},
+  month     = {Oct.},
+  year      = {2021},
+  pages     = {399--402},
+  publisher = {IEEE Press},
+  address   = {Piscataway, NJ, USA},
+  location  = {Edmonton, Canada},
+  abstract  = {Content replication to many destinations is common in the IoT. IP multicast has proven inefficient due to a missing layer-2 support by IoT radios and its synchronous end-to-end transmission, which is susceptible to interference. Information-centric networking (ICN) introduced hop-wise multiparty dissemination of cacheable content, which proves valuable for lossy networks. Even Named-Data Networking (NDN), a prominent ICN, suffers from a lack of deployment. We explore a multiparty content distribution in an information-centric Web of Things built on CoAP. We augment CoAP proxies by request aggregation and response replication, which together with caches enable asynchronous group communication. Further, we integrate object security with OSCORE into the CoAP multicast proxy system for ubiquitous caching of certified content. We compare NDN, CoAP, and our data-centric approach in testbed experiments. Our findings indicate that multiparty content distribution with CoAP proxies performs equally well as NDN, while remaining compatible with the protocol world of CoAP.},
+  url       = {https://doi.org/10.1109/LCN52139.2021.9525000},
+  theme     = {iot|icn},
+}
+
+@inproceedings{aksw-dfml-21,
+  author = {Jose Alamos and Peter Kietzmann and Thomas C. Schmidt and  Matthias  W{\"a}hlisch},
+  title =  {{DSME-LoRa -- A Flexible MAC for LoRa}},
+  booktitle = {Proc. of 29th IEEE International Conference on Network Protocols (ICNP 2021), Poster Session},
+  publisher = {IEEE},
+  address   = {Piscataway, NJ, USA},
+  year = 2021,
+  month = {November},
+  theme = {iot},
+  note = {accepted for publication},
+}
+
+@techreport{draft-core-doc,
+  author = {Martine S. Lenders and Christian Ams{\"u}ss and Cenk G{\"u}ndogan and Thomas C. Schmidt and Matthias W{\"a}hlisch},
+  title = {{DNS Queries over CoAP (DoC)}},
+  type = {IETF Internet Draft -- work in progress},
+  institution = {IETF},
+  number = {01},
+  month = {August},
+  year = {2021},
+  abstract = "This document defines a protocol for sending DNS messages over the Constrained Application Protocol (CoAP). These CoAP messages are protected by DTLS-Secured CoAP (CoAPS) or Object Security for Constrained RESTful Environments (OSCORE) to provide encrypted DNS message exchange for constrained devices in the Internet of Things (IoT).",
+  url = {https://datatracker.ietf.org/doc/draft-lenders-dns-over-coap/},
+  theme  = {iot|nsec},
+}
