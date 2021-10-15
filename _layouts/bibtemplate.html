@@ -27,9 +27,13 @@
 {% if entry.file %}
     <a href="{{ entry.file }}"><input class="button1" type="button" value="PDF" /></a>
 {% endif %}
- 
+
 {% if entry.code %}
-    <a href="{{ entry.code }}"><input class="button3" type="button" value="Articacts" /></a>
+    <a href="{{ entry.url }}"><input class="button1" type="button" value="HTML" /></a>
+{% endif %}
+
+{% if entry.code %}
+    <a href="{{ entry.code }}"><input class="button3" type="button" value="Artifacts" /></a>
 {% endif %}
 
    <button class="button4" data-toggle="collapse" data-target="#collapse-key-{{  entry.key }}" aria-expanded="false" aria-controls="collapseExample">
