@@ -137,7 +137,7 @@ header h1, header h2 {
     }
 }
 
-.button0, .button1, .button2, .button3, .button4 {
+.button0, .button1, .button2, .button3, .button4, .buttonnews {
     background-color: #417d43;
     border: none;
     color: white;
@@ -146,7 +146,6 @@ header h1, header h2 {
     text-decoration: none;
     display: inline-block;
     font-size: 10px;
-    font-weight: bold;
     margin: 2px 1px;
     cursor: pointer;
     border-radius: 5px;
@@ -168,4 +167,11 @@ header h1, header h2 {
 
 .button4 {
     background-color: #673ab7;
+}
+
+.buttonnews {
+    background-color: #A0A0A0;
+    font-size: 14px;
+    color: white;
+    margin-left: 15pt;
 }
