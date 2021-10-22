@@ -38,10 +38,14 @@ digitizations of our societies.
 
 ## News
 
-- May 21, 2021: Website setup
-- May 20, 2021: We co-organize the IoT WG at [RIPE 82](https://ripe82.ripe.net/)
-- May 19, 2021: We present a poster at the [6th ACM/IEEE Conference on
-  Internet of Things Design and Implementation](https://conferences.computer.org/iotDI/2021/)
+{% for news in site.data.news limit:3 %}
+  * <b>{{ news.date }}:</b> {{ news.text }}
+{% endfor %}
+
+<a href="news.html">
+<button class="buttonnews">
+    More &hellip;
+</button></a>
 
 ## Contacts
 
