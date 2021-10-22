@@ -10,7 +10,7 @@
   address   = {Piscataway, NJ, USA},
   abstract = {This paper evaluates four forwarding strategies for fragmented datagrams in the IoT on top of the common CSMA/CA MAC implementation for IEEE 802.15.4: hop-wise reassembly, a minimal approach to direct forwarding of fragments, classic end-to-end fragmentation, and direct forwarding utilizing selective fragment recovery. Additionally, we evaluate congestion control mechanisms for selective fragment recovery by increasing the feature set of congestion control. Direct fragment forwarding and selective fragment recovery are challenged by the lack of forwarding information at subsequent fragments in 6LoWPAN and thus require additional data at the nodes. We compare the four approaches in extensive experiments evaluating reliability, end-to-end latency, and memory consumption. Our findings indicate that direct fragment forwarding should be deployed with care, since higher packet transmission rates on the link layer can significantly reduce its reliability, which in turn can even further reduce end-to-end latency because of highly increased link layer retransmissions. Selective fragment recovery can compensate this disadvantage but struggles with the same problem underneath, constraining its full potential. Congestion control for selective fragment recovery should be chosen so that small congestion windows that are growable together with fragment pacing are used. In case of less fragments per datagram, pacing is less of a concern, but the congestion window has an upper bound.},
   url = {},
-  code = {},
+  code = {https://github.com/anr-bmbf-pivot/IEEE-Access-6LoWPAN-2021},
   file = {../papers/lsw-ffln-21.pdf}, 
   url = {https://doi.org/10.1109/ACCESS.2021.3121557}
   theme = {iot|manet},
