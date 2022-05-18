@@ -38,6 +38,8 @@ navbar_list:
   link: /about
 - name: Publications
   link: /publications
+- name: Resources
+  link: /resources
 #- name: Background
   #link: background
 #- name: Agenda
